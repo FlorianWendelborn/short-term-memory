@@ -1,0 +1,27 @@
+{
+  "name": "short-term-memory",
+  "version": "0.0.1",
+  "description": "In-memory short-term single-get key-value-store.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "travis": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodekeract/short-term-memory.git"
+  },
+  "keywords": [],
+  "author": "dodekeract",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dodekeract/short-term-memory/issues"
+  },
+  "homepage": "https://github.com/dodekeract/short-term-memory#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.3.19",
+    "mocha": "^2.2.5"
+  }
+}
