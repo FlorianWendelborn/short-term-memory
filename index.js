@@ -12,7 +12,7 @@ Storage.prototype.add = function (key, value) {
             delete that.data[key];
         }, this.time)
     };
-}
+};
 
 Storage.prototype.get = function (key) {
     if (this.data[key]) {
@@ -24,7 +24,7 @@ Storage.prototype.get = function (key) {
     } else {
         return false;
     }
-}
+};
 
 // export
 module.exports = Storage;
