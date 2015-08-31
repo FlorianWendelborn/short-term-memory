@@ -27,4 +27,19 @@ describe('test basic functionality', function () {
 		var token = myStore.get('unique key');
 		expect(token).to.be(false);
 	});
+	it('time out token', function (done) {
+		var shortStore = new ShortTermMemory({
+			duration: 50
+		});
+		shortStore.add('unique key', 'test-data');
+		setTimeout(function access () {
+			var token = shortStore.get('unique key');
+			if (token === false) {
+				done();
+			} else {
+				expect().fail();
+				done();
+			}
+		}, 60);
+	});
 });
