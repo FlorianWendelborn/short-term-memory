@@ -1,6 +1,6 @@
 {
   "name": "short-term-memory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "In-memory short-term single-get key-value-store.",
   "main": "index.js",
   "scripts": {
