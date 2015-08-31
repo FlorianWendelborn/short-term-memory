@@ -22,6 +22,7 @@ Short-term-memory is mostly used to store tokens, as the in-memory database is a
 
 ## Usage
 ### Initialization
+
 ````javscript
 var ShortTermMemory = require('short-term-memory');
 var myStore = new ShortTermMemory({
@@ -30,6 +31,7 @@ var myStore = new ShortTermMemory({
 ````
 
 ### Add entry
+
 ````javascript
 myStore.add('unique token you generated or other key', {
     some: 'object',
@@ -39,6 +41,7 @@ myStore.add('unique token you generated or other key', {
 ````
 
 ### Retrieve entry
+
 ````javscript
 var token = myStore.get('unique token you generated or other key');
 if (token !== false) {
